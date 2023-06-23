@@ -6,7 +6,7 @@ import FlexBetween from "@/components/FlexBetween";
 
 type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar: React.FC<Props> = () => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState("dashboard");
   return (
