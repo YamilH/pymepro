@@ -21,7 +21,7 @@ const Navbar: React.FC<Props> = () => {
 
       {/* RIGHT SIDE */}
       <FlexBetween gap="2rem">
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box sx={{ "&:hover": { color: palette.grey[200] } }}>
           <Link
             to="/"
             onClick={() => setSelected("dashboard")}
@@ -33,7 +33,7 @@ const Navbar: React.FC<Props> = () => {
             dashboard
           </Link>
         </Box>
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box sx={{ "&:hover": { color: palette.grey[200] } }}>
           <Link
             to="/predictions"
             onClick={() => setSelected("predictions")}

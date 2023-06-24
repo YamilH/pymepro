@@ -27,7 +27,7 @@ const pieData = [
 
 const Row2 = () => {
   const { palette } = useTheme();
-  const pieColors = [palette.primary[800], palette.primary[300]];
+  const pieColors = [palette.success.dark, palette.success.light];
   const { data: operationalData } = useGetKpisQuery();
   const { data: productData } = useGetProductsQuery();
 
@@ -101,7 +101,7 @@ const Row2 = () => {
               yAxisId="left"
               type="monotone"
               dataKey="Non Operational Expenses"
-              stroke={palette.tertiary[500]}
+              stroke={palette.secondary.dark}
             />
             <Line
               yAxisId="right"
@@ -140,7 +140,8 @@ const Row2 = () => {
           </PieChart>
           <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
             <Typography variant="h5">Target Sales</Typography>
-            <Typography m="0.3rem 0" variant="h3" color={palette.primary[300]}>
+            <Typography m="0.3rem 0" variant="h3" color={
+palette.success.light}>
               83
             </Typography>
             <Typography variant="h6">
@@ -194,7 +195,7 @@ const Row2 = () => {
             <Scatter
               name="Product Expense Ratio"
               data={productExpenseData}
-              fill={palette.tertiary[500]}
+              fill={palette.secondary.dark}
             />
           </ScatterChart>
         </ResponsiveContainer>
