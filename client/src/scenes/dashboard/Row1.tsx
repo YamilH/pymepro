@@ -96,12 +96,12 @@ const Row1 = () => {
               <linearGradient id="colorExpenses" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
-                  stopColor={palette.success.light}
+                  stopColor={palette.error.main}
                   stopOpacity={0.5}
                 />
                 <stop
                   offset="95%"
-                  stopColor={palette.success.light}
+                  stopColor={palette.error.main}
                   stopOpacity={0}
                 />
               </linearGradient>
@@ -130,7 +130,7 @@ const Row1 = () => {
               type="monotone"
               dataKey="expenses"
               dot={true}
-              stroke={palette.primary.main}
+              stroke={palette.warning.main}
               fillOpacity={1}
               fill="url(#colorExpenses)"
             />
@@ -185,7 +185,7 @@ const Row1 = () => {
               yAxisId="left"
               type="monotone"
               dataKey="profit"
-              stroke={palette.secondary.dark}
+              stroke={palette.success.light}
             />
             <Line
               yAxisId="right"

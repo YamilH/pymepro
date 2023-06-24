@@ -101,13 +101,13 @@ const Row2 = () => {
               yAxisId="left"
               type="monotone"
               dataKey="Non Operational Expenses"
-              stroke={palette.secondary.dark}
+              stroke={palette.warning.main}
             />
             <Line
               yAxisId="right"
               type="monotone"
               dataKey="Operational Expenses"
-              stroke={palette.primary.main}
+              stroke={palette.error.dark}
             />
           </LineChart>
         </ResponsiveContainer>
@@ -140,8 +140,7 @@ const Row2 = () => {
           </PieChart>
           <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
             <Typography variant="h5">Target Sales</Typography>
-            <Typography m="0.3rem 0" variant="h3" color={
-palette.success.light}>
+            <Typography m="0.3rem 0" variant="h3" color={palette.success.light}>
               83
             </Typography>
             <Typography variant="h6">

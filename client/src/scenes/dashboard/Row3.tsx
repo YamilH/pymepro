@@ -13,7 +13,7 @@ import { Cell, Pie, PieChart } from "recharts";
 
 const Row3 = () => {
   const { palette } = useTheme();
-  const pieColors = [palette.success.dark, palette.success.main];
+  const pieColors = [palette.error.dark, palette.warning.main];
 
   const { data: kpiData } = useGetKpisQuery();
   const { data: productData } = useGetProductsQuery();
@@ -187,12 +187,12 @@ const Row3 = () => {
         <Box
           height="15px"
           margin="1.25rem 1rem 0.4rem 1rem"
-          bgcolor={palette.success.dark}
+          bgcolor={palette.info.light}
           borderRadius="1rem"
         >
           <Box
             height="15px"
-            bgcolor={palette.success.main}
+            bgcolor={palette.info.dark}
             borderRadius="1rem"
             width="40%"
           ></Box>
