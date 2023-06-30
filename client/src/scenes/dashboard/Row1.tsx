@@ -152,7 +152,7 @@ const Row1 = () => {
               top: 20,
               right: 0,
               left: -10,
-              bottom: 55,
+              bottom: 65,
             }}
           >
             <CartesianGrid vertical={false} stroke={palette.grey[800]} />

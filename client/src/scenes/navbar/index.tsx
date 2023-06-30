@@ -20,7 +20,7 @@ const Navbar: React.FC<Props> = () => {
       </FlexBetween>
 
       {/* RIGHT SIDE */}
-      <FlexBetween gap="2rem">
+      <FlexBetween gap="0.3rem">
         <Box sx={{ "&:hover": { color: palette.grey[200] } }}>
           <Link
             to="/"

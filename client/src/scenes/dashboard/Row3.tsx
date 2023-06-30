@@ -160,7 +160,7 @@ const Row3 = () => {
         <FlexBetween mt="0.5rem" gap="0.5rem" p="0 1rem" textAlign="center">
           {pieChartData?.map((data, i) => (
             <Box key={`${data[0].name}-${i}`}>
-              <PieChart width={110} height={100}>
+              <PieChart width={110} height={70}>
                 <Pie
                   stroke="none"
                   data={data}
@@ -200,8 +200,7 @@ const Row3 = () => {
         <Typography margin="0 1rem" variant="h6">
           Orci aliquam enim vel diam. Venenatis euismod id donec mus lorem etiam
           ullamcorper odio sed. Ipsum non sed gravida etiam urna egestas
-          molestie volutpat et. Malesuada quis pretium aliquet lacinia ornare
-          sed. In volutpat nullam at est id cum pulvinar nunc.
+          molestie volutpat et.
         </Typography>
       </DashboardBox>
     </>
