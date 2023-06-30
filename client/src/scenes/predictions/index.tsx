@@ -46,10 +46,9 @@ const Predictions = () => {
     <DashboardBox width="100%" height="100%" p="1rem" overflow="hidden">
       <FlexBetween m="1rem 2.5rem" gap="1rem">
         <Box>
-          <Typography variant="h3">Revenue and Predictions</Typography>
+          <Typography variant="h3">Ingresos y Predicciones</Typography>
           <Typography variant="h6">
-            charted revenue and predicted revenue based on a simple linear
-            regression model
+          Gráfico de los ingresos y las predicciones basadas en un modelo de regresión lineal simple
           </Typography>
         </Box>
         <Button
@@ -60,7 +59,7 @@ const Predictions = () => {
             boxShadow: "0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,.4)",
           }}
         >
-          Show Predicted Revenue for Next Year
+          Mostrar Ingresos Pronosticados para el Próximo Año
         </Button>
       </FlexBetween>
       <ResponsiveContainer width="100%" height={500}> 

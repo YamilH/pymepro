@@ -1,19 +1,34 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles"
-import { useMemo } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { themeSettings } from "./theme"
 import { Box, CssBaseline } from "@mui/material"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "@/scenes/navbar"
 import Dashboard from "@/scenes/dashboard"
 import Predictions from "@/scenes/predictions"
+import Loader from "@/components/Loader"
 
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
+	useEffect(() => {
+		setLoading(true);
+		setTimeout(() => {
+			setLoading(false);
+		}, 6000);
+	}, []);
+
+
     const theme = useMemo(() => createTheme(themeSettings), [])
 
   return (
     <>
-      <div>
+    <div className="app">
+      	{loading ? (
+				<Loader />
+			) : (
         <BrowserRouter>
         <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -27,6 +42,7 @@ function App() {
         </Box>
         </ThemeProvider>
         </BrowserRouter>
+      )}
       </div>
 
     </>

@@ -89,7 +89,7 @@ const Row3 = () => {
     <>
       <DashboardBox gridArea="g">
         <BoxHeader
-          title="List of Products"
+          title="Lista of Productos"
           sideText={`${productData?.length} products`}
         />
         <Box
@@ -123,8 +123,8 @@ const Row3 = () => {
       </DashboardBox>
       <DashboardBox gridArea="h">
         <BoxHeader
-          title="Recent Orders"
-          sideText={`${transactionData?.length} latest transactions`}
+          title="Ordenes Recientes"
+          sideText={`${transactionData?.length} ultimas transacciones`}
         />
         <Box
           mt="1rem"
@@ -156,7 +156,7 @@ const Row3 = () => {
         </Box>
       </DashboardBox>
       <DashboardBox gridArea="i">
-        <BoxHeader title="Expense Breakdown By Category" sideText="+4%" />
+        <BoxHeader title="Desglose de gastos por categoría" sideText="+4%" />
         <FlexBetween mt="0.5rem" gap="0.5rem" p="0 1rem" textAlign="center">
           {pieChartData?.map((data, i) => (
             <Box key={`${data[0].name}-${i}`}>
@@ -181,7 +181,7 @@ const Row3 = () => {
       </DashboardBox>
       <DashboardBox gridArea="j">
         <BoxHeader
-          title="Overall Summary and Explanation Data"
+          title="Resumen general y explicación de los datos"
           sideText="+15%"
         />
         <Box

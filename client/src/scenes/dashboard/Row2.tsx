@@ -63,7 +63,7 @@ const Row2 = () => {
     <>
       <DashboardBox gridArea="d">
         <BoxHeader
-          title="Operational vs Non-Operational Expenses"
+          title="Gastos Operativos vs Gastos No Operativos"
           sideText="+4%"
         />
         <ResponsiveContainer width="100%" height="100%">
@@ -113,8 +113,8 @@ const Row2 = () => {
         </ResponsiveContainer>
       </DashboardBox>
       <DashboardBox gridArea="e">
-        <BoxHeader title="Campaigns and Targets" sideText="+4%" />
-        <FlexBetween mt="0.25rem" gap="1.5rem" pr="1rem">
+        <BoxHeader title="Campañas y Objetivos" sideText="+4%" />
+        <FlexBetween mt="0.05rem" gap="0.5rem" pr="1rem">
           <PieChart
             width={110}
             height={100}
@@ -139,28 +139,28 @@ const Row2 = () => {
             </Pie>
           </PieChart>
           <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
-            <Typography variant="h5">Target Sales</Typography>
+            <Typography variant="h5">Ventas Objetivo</Typography>
             <Typography m="0.3rem 0" variant="h3" color={palette.success.light}>
               83
             </Typography>
             <Typography variant="h6">
-              Finance goals of the campaign that is desired
+              Metas financieras de la campaña deseada
             </Typography>
           </Box>
           <Box flexBasis="40%">
-            <Typography variant="h5">Losses in Revenue</Typography>
-            <Typography variant="h6">Losses are down 25%</Typography>
+            <Typography variant="h5">Pérdidas en Ingresos</Typography>
+            <Typography variant="h6">Las pérdidas han disminuido en un 25%.</Typography>
             <Typography mt="0.4rem" variant="h5">
-              Profit Margins
+              Márgenes de beneficio
             </Typography>
             <Typography variant="h6">
-              Margins are up by 30% from last month.
+              Los márgenes aumentaron 30% desde el mes pasado.
             </Typography>
           </Box>
         </FlexBetween>
       </DashboardBox>
       <DashboardBox gridArea="f">
-        <BoxHeader title="Product Prices vs Expenses" sideText="+4%" />
+        <BoxHeader title="Precios de los productos vs Gastos" sideText="+4%" />
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart
             margin={{
